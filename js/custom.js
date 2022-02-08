@@ -26,6 +26,7 @@ $(document).ready(function () {
   });
 
   $(window).on("scroll", function () {
+    console.log('HIiii')
     alert('hiiii')
     var scroll = $(window).scrollTop();
     console.log(scroll)
