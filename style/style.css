@@ -15,7 +15,7 @@ html {
     position: fixed;
     width: 100%;
     z-index:9;
-    background: #419186;
+    background-image: linear-gradient(to top, #053726, #0d3920, #173b19, #213c10, #2c3d05);
 }
 .action-item{
     border-radius: 5px;
@@ -350,13 +350,17 @@ html {
 .faculty-icon i{
     color: #fff;
 }
-.faculty-title{
-    border-radius: 37px 0px 37px 0px;
-    /* background: linear-gradient(90deg, rgba(13,81,87,1) 0%, rgba(99,191,191,1) 100%);  */
-}
-.faculty-title:hover{
-    background: linear-gradient(90deg, rgba(13,81,87,1) 0%, rgba(99,191,191,1) 100%); 
 
+.faculty-title:hover{ 
+    background: linear-gradient(90deg, rgba(13,81,87,1) 0%, rgba(99,191,191,1) 100%); 
+    border-radius: 37px 0px 37px 0px;
+}
+.faculty-title:hover .f-sub-title h3{ 
+    color: #fff!important;
+    /* background-color: red; */
+}
+.faculty-title:hover .f-sub-title h4{
+    color: #fff;
 }
 .faculty-img img{
     border-radius: 150px;
@@ -366,7 +370,7 @@ html {
     width: 46%;
     background: linear-gradient(90deg, rgba(13,81,87,1) 0%, rgba(99,191,191,1) 100%);
     opacity: 0;
-    top: 64%;
+    top: 58%;
     left: 30%;
     border-radius: 2px;
     transition: all .3s ease-out 0s;
