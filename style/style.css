@@ -182,14 +182,16 @@ html {
         cursor: pointer;
     }
     .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-        background-color: rgb(37, 139, 71)!important;
         color: #fff!important;
+        padding: 0.5rem 2rem;
+        background: rgb(65, 145, 134);
     }
  .gallery-btn{
     color: #1f144ec7!important;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+ 
  }
 .filter img:hover{
     opacity: 0.3!important;
@@ -335,6 +337,12 @@ html {
 /* faculty */
 #faculty{
     padding: 2rem 0px 7rem 0px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 0 0;
+    box-shadow: 0 0 0 0 #ffffff;
 }
 .first{
     border: 3px solid #419186;
@@ -418,6 +426,7 @@ html {
     border-radius: 30px;
     box-shadow: 0 0 20px 0 #a1848426;
     background: white;
+
 }
 .traine-container{
     overflow-x: auto;
@@ -444,7 +453,12 @@ html {
 }
 /* footer section */
 .footer{
-    background-image: linear-gradient(to top, #053726, #0d3920, #173b19, #213c10, #2c3d05);
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 50% 100%;
+    box-shadow: 0 0 0 0 #ffffff;
     padding: 4rem 0px;
 }
 .footer_contact a{
