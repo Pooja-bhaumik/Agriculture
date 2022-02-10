@@ -16,6 +16,9 @@ $(document).ready(function () {
       0: {
         items: 1,
       },
+      400: {
+        items: 2
+      },
       600: {
         items: 3,
       },
@@ -39,71 +42,10 @@ $(document).ready(function () {
   });
 });
 
-function readMore(dot_id, more_id, btn_id) {
-  // console.log(dot_id,more_id,btn_id);
 
-  var dots = document.getElementById(dot_id);
-  var moreText = document.getElementById(more_id);
-  var btnText = document.getElementById(btn_id);
 
-  if (dots.style.display === "none") {
-    console.log("if true");
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    console.log("else");
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
 
-function myFunction1() {
-  var dots = document.getElementById("dots1");
-  var moreText = document.getElementById("more1");
-  var btnText = document.getElementById("myBtn1");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-function myFunction2() {
-  var dots = document.getElementById("dots2");
-  var moreText = document.getElementById("more2");
-  var btnText = document.getElementById("myBtn2");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-function myFunction3() {
-  var dots = document.getElementById("dots3");
-  var moreText = document.getElementById("more3");
-  var btnText = document.getElementById("myBtn3");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
 
 $(window).scroll((e) => {
   // Detect how far are we from the top of the page
@@ -146,27 +88,4 @@ $(".navbar-nav a").each(function (e) {
     });
   });
 });
-$(".footer_links  a").each(function (e) {
-  $(this).on("click", function (e) {
-    e.preventDefault();
 
-    console.log(this.getAttribute("href"));
-
-    const id = this.getAttribute("href").split("#")[1];
-
-    console.log(id);
-
-    // var element = document.getElementById(id)
-    // const offset = 100;
-    // const bodyRect = document.body.getBoundingClientRect().bottom;
-    // const elementRect = element.getBoundingClientRect().bottom;
-    // const elementPosition = elementRect - bodyRect;
-    // const offsetPosition = elementPosition - offset;
-
-    //  window.scrollTo({
-    //     bottom:offsetPosition,
-    //     behaviour: "smooth",
-
-    //   })
-  });
-});
