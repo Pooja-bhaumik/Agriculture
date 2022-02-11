@@ -233,7 +233,49 @@ body{
 .filter img:hover {
     opacity: 0.3 !important;
 }
+/*our courses*/
+/* courses */
+#our_course{
+    background: aliceblue;
+}
+.course-table{
+    border-radius: 12px;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+    background: white;
 
+}
+.sub_course{
+    box-shadow: -1px 2px 16px rgb(37 142 153 / 22%);
+    border-radius: 30px;
+    border: 1px solid #046277;
+    padding: 7px 7px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.sub_course:hover{
+    background-color: #b0e1ec;
+    border: none;
+    box-shadow: none;
+}
+.course_title h3{
+    font-size: 18px;
+    padding: 0px 1px 0px 34px;
+    align-items: center;
+    font-weight: 500;
+}
+.course_icon{
+    height: 38px;
+    width: 38px;
+    background: #046277;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course_icon span {
+    color: #fff;
+    font-size: 18px;
+}
 
 /* courses offer section */
 .course_offer {
